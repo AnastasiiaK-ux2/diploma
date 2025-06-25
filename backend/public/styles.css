@@ -1,0 +1,64 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2px 0;
+    padding: 8px;
+    min-width: 40%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+    gap: 16px;
+}
+
+.form {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.form h2 {
+    margin-top: 0;
+}
+
+.form input, .form button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+#console {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    white-space: pre-wrap;
+    min-height: 100px;
+    min-width: 30vw;
+}

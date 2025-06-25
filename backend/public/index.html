@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Budget Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="panel">
+        <div class="container">
+            <h1>Home Budget Application</h1>
+
+            <!-- Form to add a new user -->
+            <form id="userForm" class="form">
+                <h2>Add User</h2>
+                <input type="text" id="userId" placeholder="User ID">
+                <input type="text" id="username" placeholder="Username">
+                <input type="email" id="email" placeholder="Email">
+                <button type="button" onclick="addUser()">Add User</button>
+            </form>
+            <form id="updateUserForm" class="form">
+                <h2>Update User</h2>
+                <input type="text" id="updateUserId" placeholder="User ID">
+                <input type="text" id="updateUsername" placeholder="Username">
+                <input type="email" id="updateEmail" placeholder="Email">
+                <button type="button" onclick="updateUser()">Update User</button>
+            </form>
+            <form id="getUserForm" class="form">
+                <h2>Get User</h2>
+                <input type="text" id="getUserId" placeholder="User ID">
+                <button type="button" onclick="getUser()">Get User</button>
+            </form>
+            <form id="deleteUserForm" class="form">
+                <h2>Delete User</h2>
+                <input type="text" id="deleteUserId" placeholder="User ID">
+                <button type="button" onclick="deleteUser()">Delete User</button>
+            </form>
+
+            <!-- Form to add a new income -->
+            <form id="incomeForm" class="form">
+                <h2>Add Income</h2>
+                <input type="text" id="incomeId" placeholder="Income ID">
+                <input type="text" id="incomeUserId" placeholder="User ID">
+                <input type="number" id="amount" placeholder="Amount">
+                <input type="date" id="incomeDate">
+                <input type="text" id="incomeDescription" placeholder="Description">
+                <button type="button" onclick="addIncome()">Add Income</button>
+            </form>
+
+            <form id="getIncome" class="form">
+                <h2>Get Income</h2>
+                <input type="text" id="getIncomeId" placeholder="Income ID">
+                <button type="button" onclick="getIncome()">Get Income</button>
+            </form>
+
+            <!-- Form to add a new expense -->
+            <form id="expenseForm" class="form">
+                <h2>Add Expense</h2>
+                <input type="text" id="expenseId" placeholder="Expense ID">
+                <input type="text" id="expenseUserId" placeholder="User ID">
+                <input type="number" id="expenseAmount" placeholder="Amount">
+                <input type="date" id="expenseDate">
+                <input type="text" id="expenseDescription" placeholder="Description">
+                <button type="button" onclick="addExpense()">Add Expense</button>
+            </form>
+
+            <form id="getExpense" class="form">
+                <h2>Get Expense</h2>
+                <input type="text" id="getExpenseId" placeholder="Expense ID">
+                <button type="button" onclick="getExpense()">Get Expense</button>
+            </form>
+
+            <!-- Form to add a new income category -->
+            <form id="incomeCategoryForm" class="form">
+                <h2>Add Income Category</h2>
+                <input type="text" id="incomeCategoryId" placeholder="Category ID">
+                <input type="text" id="incomeCategoryName" placeholder="Category Name">
+                <button type="button" onclick="addIncomeCategory()">Add Income Category</button>
+            </form>
+
+            <!-- Form to add a new expense category -->
+            <form id="expenseCategoryForm" class="form">
+                <h2>Add Expense Category</h2>
+                <input type="text" id="expenseCategoryId" placeholder="Category ID">
+                <input type="text" id="expenseCategoryName" placeholder="Category Name">
+                <button type="button" onclick="addExpenseCategory()">Add Expense Category</button>
+            </form>
+        </div>
+        <div class="container">
+            <!-- Console to display logs -->
+            <div id="console"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
